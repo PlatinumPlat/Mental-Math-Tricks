@@ -1,0 +1,15 @@
+body {
+    background-color: powderblue;
+  }
+  h1 {
+    color: blue;
+    font: verdana;
+  }
+  p {
+    color: black;
+    font: verdana;
+  }
+  img {
+    width:50px;
+    height:50px;
+  }
