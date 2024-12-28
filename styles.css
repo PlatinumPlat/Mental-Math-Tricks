@@ -1,31 +1,59 @@
 html{ 
   .topnav {
-    margin: 0px 100px 0px 0px;
-    background-color: #6dba9f;
+    background-color: rgb(197, 244, 224);
     overflow: hidden;
     font-family: "Chivo", serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
   }
+  .topnavtext {
+    display: inline-block;
+    position: relative;
+    padding-top: 20px;
+    margin-left: 100px;
+  }
   .topnav a {
     float: left;
     color: #080c06;
+    margin-right:75px;
+    margin-left:75px;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
   }
   .topnav a:hover {
-    background-color: #ddd;
+    background-color: #C2EABA;
     color: rgb(16, 52, 21);
+    font-weight: bolder;
   }
   .topnav a.active {
-    background-color: #133226;
+    background-color: #13321f;
     color: rgb(13, 33, 26);
   }
+
+  .topnav a::before {
+      content: '';
+      display: block;
+      height: 5px;
+      background-color: #E7F59E;
+
+      position: relative;
+      top: 0;
+      width: 0%;
+
+      transition: all ease-in-out 250ms;
+  }
+
+  .topnav a:hover::before {
+      width: 100%;
+  }
+  
   body {
-      background-color: powderblue;
+    background-color: rgb(130, 200, 233);
+  }
+  .content {
       margin: 75px 25px 100px 200px;
     }
     h1 {

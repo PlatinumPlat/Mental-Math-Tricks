@@ -1,53 +1,73 @@
 <!doctype html>
 <html lang="en-US">
-  <head>
-    <title>Day of the Week</title>
-    <link href="styles.css" rel="stylesheet"/>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Antic&family=Chivo:ital@0;1&display=swap" rel="stylesheet">
+
+<head>
+  <title>Day of the Week</title>
+  <link href="styles.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Antic&family=Chivo:ital@0;1&display=swap" rel="stylesheet">
 
 
-  </head>
+</head>
+
+<body>
   <div class="topnav">
-    <a href="Homepage.html">Home</a>
-    <a href="Multiplication by Eleven.html">Multiplication by Eleven</a>
-    <a href="Day of the Week.html">Day of the Week</a>
-    <a href="#about">About</a>
-  </div> 
-  <body> 
+    <div class="topnavtext">
+      <a href="Homepage.html">Home</a>
+      <a href="Multiplication by Eleven.html">Multiplication by Eleven</a>
+      <a href="Day of the Week.html">Day of the Week</a>
+      <a href="#about">About</a>
+    </div>
+  </div>
+  <div class="content">
     <h1> Day of the Week </h1>
     <p>Given any date, you can figure out the day of the week on that specific day with the following steps.</p>
     <h2> General Solution</h2>
     <p> Follow these instructions:<br></p>
     <ol>
-      <li>Remember or note down these two codes:<br>January = 6<br>February = 2<br>March = 2<br>April = 5<br>May = 0<br>June = 3<br>July  = 5<br>August = 1<br>September = 4<br>October = 6<br>November = 2<br>December = 4
+      <li>Remember or note down these two codes:<br>January = 6<br>February = 2<br>March = 2<br>April = 5<br>May =
+        0<br>June = 3<br>July = 5<br>August = 1<br>September = 4<br>October = 6<br>November = 2<br>December = 4
         <br><br><strong>Beware!</strong>
         <br>For leap years, the code for January will become 5 and the one for<br> February will be 1.
 
-      <br><br>  
-      <img src="YearCodes.png" alt="Year codes. Images are on strike, try again another time!" width="500"/>
-      <p>However, the good news is that we do not have to remember all these<br> codes. The trick is to know what years have 0 codes, for <br>example, 2006. Then, for every year after 2006, your code increases<br> by 1 - 2007 
-        has a 0 + 1 = 1 code. However, if you come <br>across a leap year, such as 2008, you have to add two. Therefore, <br>2008 has a 1 + 2 = 3 code (2007’s code + 2). This cycle continues <br>on, until you reach 6 or 5. If 
-        the next year isn’t a leap year, a six code<br> from the previous year would become a 0 code, while a 5 code <br>would become a 0 code if it was a leap year. Essentially, 7 codes are <br>instead 0 codes.</p>
+        <br><br>
+        <img src="YearCodes.png" alt="Year codes. Images are on strike, try again another time!" width="500" />
+        <p>However, the good news is that we do not have to remember all these<br> codes. The trick is to know what
+          years have 0 codes, for <br>example, 2006. Then, for every year after 2006, your code increases<br> by 1 -
+          2007
+          has a 0 + 1 = 1 code. However, if you come <br>across a leap year, such as 2008, you have to add two.
+          Therefore, <br>2008 has a 1 + 2 = 3 code (2007’s code + 2). This cycle continues <br>on, until you reach 6 or
+          5. If
+          the next year isn’t a leap year, a six code<br> from the previous year would become a 0 code, while a 5 code
+          <br>would become a 0 code if it was a leap year. Essentially, 7 codes are <br>instead 0 codes.
+        </p>
         <strong>Trick</strong><br>Years from 2000 to 2009 (Let the year be 2000 + x):<br>
         Year code = x/4 (discard the remainder) + x<br>
         Finally, subtract the largest multiple of 7 from your current year code.<br>
         <strong>Example</strong><br>
-        For the year 2065, we have x as 65. x/4 = 65/4 = 16 R 1 (We forget the 1, or the remainder) <br>Year code = 16 + 65 = 81<br>
+        For the year 2065, we have x as 65. x/4 = 65/4 = 16 R 1 (We forget the 1, or the remainder) <br>Year code = 16 +
+        65 = 81<br>
         Largest multiple: 77<br>
-        Therefore, the year code for 2065 is 81-77 = 4</li>     
-      <li>Add the date (1-31), month codes, and year codes together, then subtract the largest multiple of 7 from this sum.<br>
+        Therefore, the year code for 2065 is 81-77 = 4
+      </li>
+      <li>Add the date (1-31), month codes, and year codes together, then subtract the largest multiple of 7 from this
+        sum.<br>
         Eg. March 19, 2061<br>
         19 + 2 + 6 = 27<br>
         27-21 = 6, or Saturday.</li>
-      </ol>
+    </ol>
     <h2> January 1</h2>
     <ol>
-      <li>Remember this code:<br>Monday = 1<br>Tuesday = 2<br>Wednesday = 3<br>Thursday = 4<br>Friday = 5<br>Saturday = 6<br>Sunday = 7 or 0
-        </li>
-      <li>Take the last two digits of the year and multiply it by 25%, or ¼. Next, discard the change, and add the original amount. <br> <strong>Example</strong><br>In year 2067, we take these steps:<br>
-      67 * 25% = 67 * ¼ = 16.75<br>Discarding the change, we have 16.<br>Adding the original amount, 67, we have: 67+16 = 83<br>We subtract the largest multiple of 7, 77 from 83 to calculate: 83-77 = 6, or Saturday!</li>
+      <li>Remember this code:<br>Monday = 1<br>Tuesday = 2<br>Wednesday = 3<br>Thursday = 4<br>Friday = 5<br>Saturday =
+        6<br>Sunday = 7 or 0
+      </li>
+      <li>Take the last two digits of the year and multiply it by 25%, or ¼. Next, discard the change, and add the
+        original amount. <br> <strong>Example</strong><br>In year 2067, we take these steps:<br>
+        67 * 25% = 67 * ¼ = 16.75<br>Discarding the change, we have 16.<br>Adding the original amount, 67, we have:
+        67+16 = 83<br>We subtract the largest multiple of 7, 77 from 83 to calculate: 83-77 = 6, or Saturday!</li>
     </ol>
-  </body>
+  </div>
+</body>
+
 </html>
