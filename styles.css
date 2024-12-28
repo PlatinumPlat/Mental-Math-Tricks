@@ -6,6 +6,7 @@ html {
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
+    text-align: right;
   }
 
   .topnavtext {
@@ -13,14 +14,14 @@ html {
     position: relative;
     padding-top: 20px;
     padding-bottom: 20px;
-    margin-left: 100px;
+    margin-right: 100px;
   } 
 
   .topnav a {
     float: left;
     color: #080c06;
-    margin-right: 75px;
-    margin-left: 75px;
+    margin-right: 25px;
+    margin-left: 25px;
     text-align: center;
     padding: 14px 16px 14px;
     text-decoration: none;
@@ -35,7 +36,7 @@ html {
 
   .topnav a.active {
     background-color: #161B33;
-    color: rgb(27, 33, 13);
+    color: rgb(219, 237, 175);
   }
 
   .topnav a::before {
