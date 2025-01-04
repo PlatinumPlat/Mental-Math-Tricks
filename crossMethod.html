@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en-US">
+
+<head>
+  <title>Criss Cross Method</title>
+  <link href="styles.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chivo:ital@0;1&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container">
+    <div class="sidenav">
+      <div class="sidenavtext">
+        <img src="Images/MMT Logo.png" id="MMT" />
+        <a href="index.html">Home</a>
+        <a href="multipyEleven.html">Multiplication by Eleven</a>
+        <a href="dayOfWeek.html">Day of the Week</a>
+        <a href="squareNumbers.html">Squaring</a>
+        <a href="checkDivisibility.html">Check Divisibility</a>
+        <a href="crossMethod.html">Criss-Cross Method</a>
+      </div>
+    </div>
+    <div class="content">
+      <h1> Criss-Cross Method </h1>
+      <p>With paper and pencil at your disposal, you can multiply any pair of two digit numbers!</p>
+      <h2> Example</h2>
+      <p> 95*62</p>
+      <img src="Images/CC_MethodStep1.png" id="smaller" class = "chart"
+        alt="Product chart of numbers which add to 74. Images are on strike, try again another time!" />
+      <p>Multiply the ones digits. <br>
+        5*2 = 10. <br>
+        Keep the ones digit of your product (it will be the ones digit of your answer) and carry over the tens digit.
+      </p>
+      <img src="Images/CC_MethodStep2.png" id="smaller" class = "chart"
+        alt="Product chart of numbers which add to 74. Images are on strike, try again another time!" />
+      <p>Cross multiply and add the carried over number from before.<br>
+        1+ 9*2+5*6= 1+18+30=49.<br>
+        Once again, keep the ones digit of your product (it will be the tens digit of your answer) and carry over the
+        tens digit.
+      </p>
+      <img src="Images/CC_MethodStep3.png" id="smaller" class = "chart"
+        alt="Product chart of numbers which add to 74. Images are on strike, try again another time!" />
+      <p>Multiply your tens digits and add your previously carried over number.<br>
+        4 + 9*6 = 58.<br>
+        Now, take both the digits.<br>
+
+        Piece your answer together/Combine the underlined digits!<br>
+        5890 (58 from the last step, 9 from the second step, 0 from the first step)
+      </p>
+      <h2>
+        Three-digit Multiplication
+      </h2>
+      <p>This method also works for three-digit numbers, in a similar way, though it is more complex and requires 5
+        instead of 3 steps.
+      </p>
+      <h3>Example</h3>
+      <p>582*476</p>
+      <p>The method goes like this:</p>
+      <img src="Images/3DigitMultiplication.png" class = "chart"
+        alt="Product chart of numbers which add to 74. Images are on strike, try again another time!" />
+      <p>In this case, we can calculate 582*476 with the steps above. We calculate the following digits from each step:
+        <br>
+        !!! If you have not already, please read the instructions for the 2-digit criss-cross multiplication method
+        before approaching these 3-digit problems! <br>
+        Similar to before, underlined numbers are digits to remember, which are also part of our final answer. The
+        beginning of each step (apart from the first) will have a carried-over digit that will be part of the sum from
+        the previous step (if there are none then it would be 0).
+      </p>
+      <ol>
+        <li>2*6 = 1<u>2</u></li>
+        <li>1+2*7+6*8 = 1+14+48 = 6<u>3</u></li>
+        <li>6 + 2*4+8*7+5*6 = 6+8+56+30 = 10<u>0</u></li>
+        <li>10+8*4+5*7 =10+32+35 = 7<u>7</u></li>
+        <li>7+5*4 = 7+20 = <u>27</u></li>
+      </ol>
+      <p>
+        Therefore, our final answer is: <u>277032.</u>
+      </p>
+    </div>
+  </div>
+</body>
+
+</html>

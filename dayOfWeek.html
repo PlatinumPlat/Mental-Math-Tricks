@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en-US">
+
+<head>
+  <title>Day of the Week</title>
+  <link href="styles.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chivo:ital@0;1&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="sidenav">
+      <div class="sidenavtext">
+        <img src="Images/MMT Logo.png" id="MMT" />
+        <a href="index.html">Home</a>
+        <a href="multipyEleven.html">Multiplication by Eleven</a>
+        <a href="dayOfWeek.html">Day of the Week</a>
+        <a href="squareNumbers.html">Squaring</a>
+        <a href="checkDivisibility.html">Check Divisibility</a>
+        <a href="crossMethod.html">Criss-Cross Method</a>
+      </div>
+    </div>
+    <div class="content">
+      <h1> Day of the Week </h1>
+      <p>Given any date, you can figure out the day of the week on that specific day with the following steps.</p>
+      <h2> General Solution</h2>
+      <p> Follow these instructions:</p>
+      <ol>
+        <li>Remember or note down these two codes: <br>
+          <img src="Images/MonthCodes.png" class = "chart" id="vertical" alt="Month codes. Images are on strike, try again another time!" />
+          <img src="Images/YearCodes.png" class = "chart" id = "vertical" alt="Year codes. Images are on strike, try again another time!" />
+          <br>
+          <div class = "warning"><strong>Beware!</strong>
+            (Left Chart) For leap years, the code for January will become 5 and the one for February will be 1.</div>
+        </li>
+        <li>
+          <p>However, the good news is that we do not have to remember all these codes. The trick is to know what
+            years have 0 codes, for example, 2006. Then, for every year after 2006, your code increases by 1 -
+            2007
+            has a 0 + 1 = 1 code. However, if you come across a leap year, such as 2008, you have to add two.
+            Therefore, 2008 has a 1 + 2 = 3 code (2007 code + 2). This cycle continues on, until you reach 6
+            or
+            5. If
+            the next year is not a leap year, a six code from the previous year would become a 0 code, while a 5 code
+            would become a 0 code if it was a leap year. Essentially, 7 codes are instead 0 codes.
+          </p>
+          <strong>Trick</strong><br>Years from 2000 to 2009 (Let the year be 2000 + x):<br>
+          Year code = x/4 (discard the remainder) + x<br>
+          Finally, subtract the largest multiple of 7 from your current year code.<br>
+          <strong>Example</strong><br>
+          For the year 2065, we have x as 65. x/4 = 65/4 = 16 R 1 (We forget the 1, or the remainder) <br> Year code =
+          16
+          +
+          65 = 81<br>
+          Largest multiple: 77<br>
+          Therefore, the year code for 2065 is 81-77 = 4
+        </li>
+        <li>Add the date (1-31), month codes, and year codes together, then subtract the largest multiple of 7 from this
+          sum.<br>
+          Eg. March 19, 2061<br>
+          19 + 2 + 6 = 27<br>
+          27-21 = 6, or Saturday.</li>
+      </ol>
+      <h2> January 1</h2>
+      <ol>
+        <li>Remember this code:<br>
+          <img src="Images/WeekCodes.png" class = "chart" id="small" alt="Week codes. Images are on strike, try again another time!" />
+        </li>
+        <li>Take the last two digits of the year and multiply it by 25%, or ¼. Next, discard the change, and add the
+          original amount.<br>
+          <strong>Example</strong>
+          <br>In year 2067, we take these steps:<br>
+          67 * 25% = 67 * ¼ = 16.75 <br> Discarding the change, we have 16. Adding the original amount, 67, we have:<br>
+          67+16 = 83 <br> We subtract the largest multiple of 7, 77 from 83 to calculate: <br>83-77 = 6, or Saturday!
+        </li>
+      </ol>
+    </div>
+  </div>
+</body>
+
+</html>

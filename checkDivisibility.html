@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en-US">
+
+<head>
+  <title>Check Divisibility</title>
+  <link href="styles.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chivo:ital@0;1&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="sidenav">
+      <div class="sidenavtext">
+        <img src="Images/MMT Logo.png" id="MMT" />
+        <a href="index.html">Home</a>
+        <a href="multipyEleven.html">Multiplication by Eleven</a>
+        <a href="dayOfWeek.html">Day of the Week</a>
+        <a href="squareNumbers.html">Squaring</a>
+        <a href="checkDivisibility.html">Check Divisibility</a>
+        <a href="crossMethod.html">Criss-Cross Method</a>
+      </div>
+    </div>
+    <div class="content">
+      <h1> Chart </h1>
+      <p> Here is a simple overview of the easy ones:
+      </p>
+      <img src="Images/DivisibilityChart.png" class = "chart"
+        alt="Product chart of numbers which add to 74. Images are on strike, try again another time!" />
+      <p>What about the harder ones, like 7, 11, and 13?
+        Scroll down to learn some tricks your school teachers never told you!</p>
+      <h2>
+        11
+      </h2>
+      <p>Take the digits of the number and sequentially subtract/add the digits. If your end result is a multiple of 11
+        or 0, then your number is a multiple of 11.</p>
+      <h3>
+        Example
+      </h3>
+      <p>13578158 <br>
+        1-3+5-7+8-1+5-8 = 0 <br>
+        Therefore, 13578158 is a multiple of 11!
+      </p>
+      <h3>
+        Example 2
+      </h3>
+      <p>33454644 <br>
+        3-3+4-5+4-6+4-4 = -3 <br>
+        Therefore, 33454644 is not a multiple of 11.
+      </p>
+      <h3>
+        Example 3
+      </h3>
+      <p>10875073 <br>
+        1-0+8-7+5-0+7-3 = 11 <br>
+        Therefore, 10875073 is a multiple of 11!
+      </p>
+      <h2>Odd numbers that do not end in 5:</h2>
+      <p> Let us use the number 69542, a random number. Say we want to test for divisibility by 13. Each step, our goal
+        is to make the last digit a zero, we can either add or subtract a multiple of 13. <br> 13*4 = 52 <br> We
+        subtract 52 to calculate: 69542-52 = 39490. Since dividing by ten does not affect divisibility by 13 (but it
+        does to multiples of 5), we can remove the last 0 to find 3949. <br>13*3 = 39<br>
+        3949-39 = 3910.<br>
+        Remove the zero to calculate: 391. <br>
+
+        13*7 = 91<br>
+        391-91 = 300<br>
+        We can remove <strong>2</strong> zeros! <br>
+
+        Our last digit is 3, which is definitely not divisible by 13. If it were, we would end at a multiple of 13, like
+        26 or 65. In that case, we could end there and say that our number was divisible by 13.
+      </p>
+    </div>
+  </div>
+</body>
+
+</html>
