@@ -157,18 +157,12 @@ html {
 
   p {
     color: black;
-    font-family: "Red Hat Display", serif;
-    font-optical-sizing: auto;
-    font-style: normal;  
     margin-top: 10px;
     margin-bottom: 10px;
   }
 
   li {
     color: black;
-    font-family: "Red Hat Display", serif;
-    font-optical-sizing: auto;
-    font-style: normal;  
     margin-top: 10px;
     margin-bottom: 10px;
   }
@@ -242,5 +236,87 @@ html {
     display:inline-block;
     margin-bottom: 20px;
     margin-right: 20px;
+  }
+
+  button {
+    font-family: "Red Hat Display", serif;
+    font-optical-sizing: auto;
+    font-style: normal; 
+    padding: 10px; 
+    background-color: #FFC0BE;
+    border-color: #de93ab;
+    border-radius: 5px;
+  }
+
+  input {
+    font-family: "Red Hat Display", serif;
+    font-optical-sizing: auto;
+    font-style: normal;  
+    padding: 10px; 
+    background-color: #fdd7d6;
+    border-color: #de93ab;
+    border-radius: 5px;
+  }
+
+  #result {
+    margin-top: 5px;
+  }
+
+  #next {
+    margin-top: 20px;
+  }
+
+  #submit {
+    margin-left: 0px;
+  }
+
+  #explanation-box {
+    display: none;
+  }
+
+  #showFinalScore {
+    display: none;
+  }
+
+  .toQuiz {
+    margin-top: 25px;
+    margin-left: 80%;
+  }
+
+  .toQuiz a {
+    float: bottom;
+    color: #000000;
+    text-align: center;
+    padding: 10px;
+    font-size: 17px;
+    background-color: #de93ab;
+    border-color: #FF82A9;
+    border-radius: 5px;
+  }
+
+  .toQuiz a:hover {
+    background-color: #FF82A9;
+    font-weight: bolder;
+  }
+
+  .back {
+    margin-top: 25px;
+    margin-left: 65%;
+  }
+
+  .back a {
+    float: bottom;
+    color: #000000;
+    text-align: center;
+    padding: 10px;
+    font-size: 17px;
+    background-color: #de93ab;
+    border-color: #FF82A9;
+    border-radius: 5px;
+  }
+
+  .back a:hover {
+    background-color: #FF82A9;
+    font-weight: bolder;
   }
 }

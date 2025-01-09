@@ -27,16 +27,26 @@
       </div>
     </div>
     <div class="content">
-        <h1> Multiplication By Eleven Quiz </h1>
-        <h2>Calculate:</h2>
-        <div class = "question" id="question">Question:</div>
-        <br>
+      <h1> Multiplication By Eleven Quiz </h1>
+      <h2>Calculate:</h2>
+      <div class="question" id="question">Question:</div>
+      <br>
+      <hr>
+      <h2>Type your answer:</h2>
+      <input id="answer" type="number" placeholder="Answer Here..." oninput="toggleSubmit()">
+      <button id="submit">Submit Your Answer!</button>
+      <div id="result"></div>
+      <div id="explanation-box">
         <hr>
-        <h2>Type your answer:</h2>
-        <input id="answer" type="text" placeholder="Answer Here...">
-        <button id="submit">Submit Your Answer!</button>
-        <div id="result"></div>
-        <button id="next">Next Question</button>
+        <h3 id="explain">Explanation:</h3>
+        <div id="explanation"></div>
+        <hr>
+      </div>
+      <button id="next">Next Question</button>
+      <button id="showFinalScore">Final Score</button>
+      <div class="back">
+        <a href="multipyEleven.html">Back to Article</a>
+      </div>
     </div>
   </div>
 
