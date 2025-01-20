@@ -1,13 +1,20 @@
 const questions = [
     {
-        question: "4564774167, 11",
-        correctAnswer: "no",
-        explanation: "Using the alternating addition and subtraction method, we can calculate that:\n4-5+6-4+7-7+4-1+6-7=3\nAs the end result is not 0 or a multiple of 11, 4564774167 is NOT divisible by 11."
+        question: "65*98",
+        correctAnswer: "6370",
+        explanation: `First we imagine the chart:\n`+
+                    `6            5\n`+
+                    `9            8\n`+
+                    `Here, our first step is multiplying the two unit digits. 5* 8 = 40. Carry over the 4 into our cross multiplication. 4 + 6 * 8 + 5 * 9 = 4 + 48 + 45 = 97. Finally, carry over the 9 to our last product, 9* 6. 9 + 9 * 6 = 9 + 54 = 63. We do not need to carry over the 6, we just add all the unit digits(and the last number, 63) to find our answer: 6370`
     },
     {
-        question: "49870, 5",
+        question: "46*73",
         correctAnswer: "yes",
-        explanation: "Easily tell that 49870 has a 0 as a unit digit, which means it is divisible by 5."
+        explanation: `Chart:\n
+                        4            6\n
+                        7            3\n
+                        6 * 3 = 18\n
+                        Carrying over the 1 to the cross multiplication, we have 4*3+ 6*7 + 1 = 12 + 42 + 1 = 55. Remember to “cross” multiply, instead of calculating 4*7 + 6*3 + 1. Lastly, 4*7 = 28. Adding the carried over 5, 28 + 5 = 33. Our final answer is 3385.`
     },
     {
         question: "987804, 9",

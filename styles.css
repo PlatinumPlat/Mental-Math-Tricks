@@ -129,7 +129,14 @@ html {
     font-family: "Red Hat Display", serif;
     font-optical-sizing: auto;
     font-style: normal;   
-  }
+  }line-height: 1.5;
+  max-inline-size: 85%;
+  writing-mode: horizontal-tb;
+  margin-left: 5%;
+  font-family: "Red Hat Display",
+  serif;
+  font-optical-sizing: auto;
+  font-style: normal;
 
   h1 {
     color: #804155;
@@ -318,5 +325,12 @@ html {
   .back a:hover {
     background-color: #FF82A9;
     font-weight: bolder;
+  }
+
+  pre {
+    line-height: 1.5;
+    font-family: "Red Hat Display", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
   }
 }
