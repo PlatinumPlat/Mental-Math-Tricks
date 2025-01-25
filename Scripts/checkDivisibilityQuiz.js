@@ -97,11 +97,6 @@ function toggleSubmit() {
     }
 }
 
-$("#answer").change(function () {
-    toggleSubmit();
-}
-);
-
 $("#submit").click(function () {
     answer = document.getElementById("answer").value;
     checkAnswer(answer);
@@ -113,5 +108,10 @@ $("#showFinalScore").click(function () {
         showFinalScore();
     }
 });
+
+$("#answer").change(function () {
+    toggleSubmit();
+}
+);
 
 loadQuestion();

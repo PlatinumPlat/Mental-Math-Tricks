@@ -51,6 +51,21 @@
           <strong>Trick</strong><br>Years from 2000 to 2009 (Let the year be 2000 + x):<br>
           Year code = x/4 (discard the remainder) + x<br>
           Finally, subtract the largest multiple of 7 from your current year code.<br>
+          For the following centuries, imagine the first two digits of the year were replaced with 20. <hr>
+          1900 - 1999:<br>
+          Complete the calculation as if it was a date from 2000-2099, but shift the date forward by one day or add 1 to your
+          answer.<hr>
+          1800 - 1899:<br>
+          Complete the calculation as if it was a date from 2000-2099, but shift the date forward by three days or add 3 to your
+          answer.<hr>
+          2100 - 2199:<br>
+          Complete the calculation as if it was a date from 2000-2099, but shift the date forward by 5 days or add 5 to your
+          answer. On the other hand, you can instead subtract 2 or shift backwards by 2 days.<hr>
+          1700 - 1799:<br>
+          For these dates, you do the same as for 2100-2199; you add 5. However, since September 14, 1752 marks the change from
+          the Julian calendar to the Gregorian calendar, any dates before September 14 will not satisfy the formula. Specifically,
+          Wednesday, September 2, 1752 was followed by Thursday, September 4, 1752, so there was a 12 day time skip between these
+          two dates. Essentially, do not attempt use of this formula for any date before September 14, 1752.<hr>
           <strong>Example</strong><br>
           For the year 2065, we have x as 65. x/4 = 65/4 = 16 R 1 (We forget the 1, or the remainder) <br> Year code =
           16
@@ -78,6 +93,9 @@
           67+16 = 83 <br> We subtract the largest multiple of 7, 77 from 83 to calculate: <br>83-77 = 6, or Saturday!
         </li>
       </ol>
+      <div class="back">
+        <a href="dayOfWeekQuiz.html">Go to Quiz</a>
+      </div>
     </div>
   </div>
 </body>

@@ -2,7 +2,7 @@
 <html lang="en-US">
 
 <head>
-  <title>Day of Week Quiz</title>
+  <title>Squaring Numbers</title>
   <link href="styles.css" rel="stylesheet" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,37 +27,27 @@
       </div>
     </div>
     <div class="content">
-      <h1> Day of Week Quiz </h1>
-      <div id="start" data-final="1">
+      <h1> Day of Week Daily Practice </h1>
+      <div id="start">
         <h2>Type the day of the week (capitalized - Monday, Tuesday, etc.):</h2>
       </div>
-      <div class="question" id="question"  data-final="1">Question:</div>
+      <div class="question" id="question" >Question:</div>
       <br>
       <hr>
-      <div id="start2" data-final="1">
-        <h2>Type your answer:</h2>
-      </div>
-      <input id="answer" type="text"  data-final="1" placeholder="Answer Here..." oninput="toggleSubmit()">
-      <button id="submit"  data-final="1">Submit Your Answer!</button>
+      <h2>Type your answer:</h2>
+      <input id="answer" type="text" placeholder="Answer Here..." oninput="toggleSubmit()">
+      <button id="submit">Submit Your Answer!</button>
       <div id="result"></div>
-      <div id="explanation-box" data-final="1">
-        <hr>
-        <h3 id="explain">Explanation:</h3>
-        <div id="explanation"></div>
-        <hr>
-      </div>
-      <button id="next" data-final="1">Next Question</button>
-      <button id="showFinalScore"  data-final="1">Final Score</button>
+      <button id="next">Next Question</button>
       <div class="back">
         <a href="dayOfWeek.html">Back to Article</a>
       </div>
       <div class="back">
-        <a href="dayOfWeekPractice.html">Daily Practice</a>
+        <a href="dayOfWeekQuiz.html">Back to Quiz</a>
       </div>
     </div>
   </div>
 
   <script src="Scripts/jquery-3.7.1.js"></script>
-  <script src="Scripts/dayOfWeekQuiz.js"></script>
-
+  <script src="Scripts/dayOfWeekPractice.js"></script>
 </body>
