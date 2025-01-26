@@ -12,14 +12,14 @@ const questions = [
     },
     {
         question: "46 * 73",
-        correctAnswer: "3385",
+        correctAnswer: "3358",
         explanation: `Chart:\n`+
                         `4            6\n`+
                         `7            3\n`+
                         `6 * 3 = 18\n`+
                         `Carrying over the 1 to the cross multiplication, we have 4*3+ 6*7 + 1 = 12 + 42 + 1 = 55.\n`+
                         `Remember to 'cross' multiply, instead of calculating 4*7 + 6*3 + 1.\n`+
-                        `Lastly, 4*7 = 28. Adding the carried over 5, 28 + 5 = 33. Our final answer is 3385.`
+                        `Lastly, 4*7 = 28. Adding the carried over 5, 28 + 5 = 33. Our final answer is 3358.`
     },
     {
         question: "22 * 23",

@@ -3,8 +3,8 @@ const questions = [
         question: "Janurary 19, 2007",
         correctAnswer: "Friday",
         explanation: `Using the charts,\n`+
-                    `6+19+1 = 26\n`+
-                    `Largest multiple of 7: 21\n`+
+                    `6+19+1 = 26 \n`+
+                    `Largest multiple of 7: 21 \n`+
                     `Therefore, 26-21 = 5, which is Friday.`
     },
     {
@@ -20,32 +20,32 @@ const questions = [
         correctAnswer: "Sunday",
         explanation: `Using the charts,\n` +
             `3+5+20 = 28\n` +
-            `Largest multiple of 7: 21\n` +
-            `Therefore, 26-21 = 5, which is Sunday.`
+            `Largest multiple of 7: 28\n` +
+            `Therefore, 28-28 = 0, which is Sunday.`
     },
     {
-        question: "Janurary 19, 2007",
-        correctAnswer: "Friday",
+        question: "September 1, 1983",
+        correctAnswer: "Thursday",
         explanation: `Using the charts,\n` +
-            `6+19+1 = 26\n` +
-            `Largest multiple of 7: 21\n` +
-            `Therefore, 26-21 = 5, which is Friday.`
+            `4+1+6 = 11\n` +
+            `Largest multiple of 7: 7\n` +
+            `Therefore, 11-7 = 4, which is Thursday.`
     },
     {
-        question: "Janurary 19, 2007",
-        correctAnswer: "Friday",
+        question: "July 4, 1776",
+        correctAnswer: "Thursday",
         explanation: `Using the charts,\n` +
-            `6+19+1 = 26\n` +
-            `Largest multiple of 7: 21\n` +
-            `Therefore, 26-21 = 5, which is Friday.`
+            `5+4+2 = 11\n` +
+            `Largest multiple of 7: 7\n` +
+            `Therefore, 11-7 = 4, which is Thursday.`
     },
     {
-        question: "Janurary 19, 2007",
-        correctAnswer: "Friday",
+        question: "Janurary 1, 2468",
+        correctAnswer: "Wednesday",
         explanation: `Using the charts,\n` +
-            `6+19+1 = 26\n` +
-            `Largest multiple of 7: 21\n` +
-            `Therefore, 26-21 = 5, which is Friday.`
+            `6+1+3 = 10\n` +
+            `Largest multiple of 7: 7\n` +
+            `Therefore, 10-7= 3, which is Wednesday.`
     }
 ];
 
