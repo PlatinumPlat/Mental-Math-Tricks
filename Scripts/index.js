@@ -1,3 +1,25 @@
+var today = new Date();
+
+let taskArray = [
+    {
+        name: "Follow Instructions",
+        description: "Visit instructions page from the navigation bar.",
+        dueDate: today,
+        dueTime: "15:00",
+        assignmentLink: "http://homeworklink.com",
+        notes: "Read Carefully!"
+    },
+    {
+        name: "Buy Groceries",
+        description: "Milk, Eggs, Bread",
+        dueDate: today,
+        dueTime: "10:00",
+        assignmentLink: "https://www.longos.com/",
+        notes: "Don't forget the bread!"
+    }
+];
+
+
 var taskList = document.getElementsByTagName("li");
 var i;
 
@@ -33,11 +55,11 @@ var edit = document.getElementsByClassName("edit");
 var l;
 for (var l = 0; l < edit.length; l++) {
     edit[l].onclick = function () {
-        var div = this.parentElement;
+        var div = this.parentElement; 
+        document.getElementById("nextTask").value = div.firstChild.textContent;
         div.style.display = "none";
     }
 }
-
 
 var tasks = document.querySelector('ul');
 
@@ -47,23 +69,67 @@ tasks.addEventListener('click', function (ev) {
     }
 }, false);
 
-function newElement() {
-    var li = document.createElement("li");
-    var taskValue = document.getElementById("nextTask").value;
-    var text = document.createTextNode(taskValue);
 
-    li.appendChild(text);
+
+
+function newElement() {
+    console.log("hi");
+    var taskValue = $("#nextTask").val();
+    var taskDescription = $("#nextTaskDes").val();
+    var dueDate = $("#dueDate").val();
+    var dueTime = $("#dueTime").val();
+    var assignmentLink = $("#assignment").val();
+    var notes = $("#notes").val();
 
     if (taskValue === '') {
         alert("You must write something!");
-    } if (taskValue.length > 49){
-        alert("You have exceeded the character limit.")
-    } else {
-        document.getElementById("taskCollection").appendChild(li);
+        return;
+    } if (taskValue.length > 49) {
+        alert("You have exceeded the character limit.");
+        return;
     }
 
-    document.getElementById("nextTask").value = "";
+    let task = {
+        name: taskValue,
+        description: taskDescription,
+        dueDate: dueDate,
+        dueTime: dueTime,
+        assignmentLink: assignmentLink,
+        notes: notes
+    }
 
+    taskArray.push(task);
+    renderTaskList();
+
+    $("#nextTask").val("");
+    $("#nextTaskDes").val("");
+    $("#dueDate").val("");
+    $("#dueTime").val("");
+    $("#assignment").val("");
+    $("#notes").val("");
+
+}
+
+function renderTaskList() {
+    const taskListElement = document.getElementById("taskCollection");
+    taskListElement.innerHTML = '';
+
+    taskArray.forEach(function (task) {
+    let li = document.createElement("li");
+    let taskText = document.createTextNode(task.name + "-" + clipDescription(task.description));
+    li.appendChild(taskText);
+
+    let dueDateText = document.createElement("span");
+    dueDateText.classList.add("dueDate");
+    dueDateText.textContent = `Due: ${task.dueDate}`;
+    li.appendChild(dueDateText);
+
+    taskListElement.appendChild(li);
+    addTaskControls(li, task);
+    });
+}
+
+function addTaskControls(li, task) {
     var span = document.createElement("span")
     var txt = document.createTextNode("\u00D7");
     span.className = "close";
@@ -76,14 +142,43 @@ function newElement() {
     editSpan.appendChild(editTxt);
     li.appendChild(editSpan);
 
+
     span.onclick = function () {
-        var div = this.parentElement;
-        div.style.display = "none";
+        const index = taskArray.indexOf(task);
+        if (index !== -1) {
+            taskArray.splice(index, 1);
+        }
+        renderTaskList();
     }
 
     editSpan.onclick = function () {
         var div = this.parentElement;
-        document.getElementById("nextTask").value = div.firstChild.textContent;
-        div.style.display = "none";
+        $("#nextTask").val(task.name);
+        $("#nextTaskDes").val(task.description);
+        $("#dueDate").val(task.dueDate);
+        $("#dueTime").val(task.dueTime);
+        $("#assignment").val(task.assignmentLink);
+        $("#notes").val(task.notes);
     }
+
 }
+
+function clipDescription(des) {
+    if (des.length > 50) {
+        return des.substring(0, 50) + "...";
+    }
+    return des;
+}
+
+function clearElements() {
+    $("#nextTask").val("");
+    $("#nextTaskDes").val("");
+    $("#dueDate").val("");
+    $("#dueTime").val("");
+    $("#assignment").val("");
+    $("#notes").val("");
+}
+
+window.onload = function () {
+    renderTaskList();
+};

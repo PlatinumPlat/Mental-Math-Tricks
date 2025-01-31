@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en-US">
 
-<head>
+ <head>
   <title>To-Do List</title>
   <link href="styles.css" rel="stylesheet" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,47 +17,43 @@
 </head>
 
 <body>
-  <div class="topnav">
+   <div class="topnav">
     <div class="topnavtext">
       <a href="instructions.html">Instructions</a>
       <a href="toDoList.html">To-Do List</a>
     </div>
   </div>
-  <div class="search">
-
-  </div>
-
-  <div class="container">
-    <div class="content">
-      <div class="title">
+   <div class="container">
+     <div class="content">
+       <div class="title">
         <h1>To-Do or Not to Do?</h1>
         <p>With <strong style="font-size: 23px; color:#2E0014;">Task Tracker</strong>, that is no longer the question...
         </p>
       </div>
-      <form>
         <div class="selections">
-          <input id="nextTask" type="text" size=70 placeholder="Task Name">
+           <input id="nextTask" type="text" size=70 placeholder="Task Name">
           <br>
-          <textarea id="nextTask" rows="5" cols="70" placeholder="Task description..."></textarea>
+          <textarea id="nextTaskDes" rows="5" cols="70" placeholder="Task description..."></textarea>
           <br>
           <input type="date" id="dueDate">
           <input type="time" id="dueTime">
           <br>
-          <input type="url" id="assignment" placeholder="Enter Assignment Link">
+          <input type="url" id="assignment" size = 50 placeholder="Enter Assignment Link">
           <button id="toggleNotes">Show/Hide Notes</button>
-          <textarea id="notes" rows="10" cols="120" placeholder = "Type in your ideas here..."></textarea>
+          <textarea id="notes" rows="10" cols="120" placeholder="Type in your ideas here..."></textarea>
           <br>
           <button onclick="newElement()" id="addBtn">Add Task</button>
+          <button onclick="clearElements()" id="clearBtn">Clear All</button>
+
         </div>
-      </form>
-      <ul id="taskCollection">
+       <ul id="taskCollection">
         <li>Add your own tasks</li>
         <li>Click to cross out tasks</li>
         <li class="checked">Select ...</li>
         <li>Delete with the x button!</li>
       </ul>
-    </div>
-  </div>
+     </div>
+   </div>
 
 </body>
 <script src="Scripts/index.js"></script>

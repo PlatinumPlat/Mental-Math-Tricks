@@ -1,4 +1,4 @@
-# 🧮 MMT Courses
+# 🧮 To-Do List
  Courses for you to level up your mental math tricks!
 
 # 🧠 Project Description
