@@ -1,62 +1,61 @@
 <!doctype html>
 <html lang="en-US">
 
- <head>
-  <title>To-Do List</title>
+<head>
+  <title>Mental Math Tricks</title>
   <link href="styles.css" rel="stylesheet" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=Chivo:ital@0;1&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap"
     rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Ephesis&family=Jost:ital,wght@0,100..900;1,100..900&family=Vibes&display=swap"
-    rel="stylesheet">
 </head>
 
 <body>
-   <div class="topnav">
+  <div class="topnav">
     <div class="topnavtext">
-      <a href="instructions.html">Instructions</a>
-      <a href="toDoList.html">To-Do List</a>
+      <img src="Images/MMT Logo.png" id="MMT" />
+      <a href="courses.html">Courses</a>
     </div>
   </div>
-   <div class="container">
-     <div class="content">
-       <div class="title">
-        <h1>To-Do or Not to Do?</h1>
-        <p>With <strong style="font-size: 23px; color:#2E0014;">Task Tracker</strong>, that is no longer the question...
-        </p>
-      </div>
-        <div class="selections">
-           <input id="nextTask" type="text" size=70 placeholder="Task Name">
-          <br>
-          <textarea id="nextTaskDes" rows="5" cols="70" placeholder="Task description..."></textarea>
-          <br>
-          <input type="date" id="dueDate">
-          <input type="time" id="dueTime">
-          <br>
-          <input type="url" id="assignment" size = 50 placeholder="Enter Assignment Link">
-          <button id="toggleNotes">Show/Hide Notes</button>
-          <textarea id="notes" rows="10" cols="120" placeholder="Type in your ideas here..."></textarea>
-          <br>
-          <button onclick="newElement()" id="addBtn">Add Task</button>
-          <button onclick="clearElements()" id="clearBtn">Clear All</button>
-
-        </div>
-       <ul id="taskCollection">
-        <li>Add your own tasks</li>
-        <li>Click to cross out tasks</li>
-        <li class="checked">Select ...</li>
-        <li>Delete with the x button!</li>
-      </ul>
-     </div>
-   </div>
+  <div class="container">
+    <div class="content">
+      <h1> Welcome! </h1>
+      <h2> Mental Math Tricks</h2>
+      <p>Want to be like this mathemagician?</p>
+      <iframe width="420" height="315" src="https://www.youtube.com/embed/e4PTvXtz4GM"></iframe>
+      <p>
+        Enroll now!<br>
+        Currently, you can enjoy a selection of 5 courses ranging in difficulty.<br>
+        Start now! <br>
+        Learn a few different tricks to impress your friends and family.
+      </p>
+      <h2>Courses</h2>
+      <p>Visit our courses page: </p>
+      <a href = "courses.html">Click Here!</a>
+      <p> Ranging in difficulty, you can learn to… <br>
+          Multiply by eleven in a flash!<br>
+          Impress your friends by guessing the weekday of their birth!<br>
+          Square any two or three digit number easily. 
+      </p>
+      <h2>Sidenotes</h2>
+      <p>However, at the end of the day, remember that:
+        <li>Practice makes perfect!
+          <br>These tricks can be confusing at the start, though practicing, like any other skill, can result in quicker
+          calculations that will improve in accuracy!
+        </li>
+        <li>Nobody is perfect.
+          <br>In the video above, you can see that even Art Benjamin, a master at these tricks, makes mistakes (Add
+          time). Everyone miscalculates every once in a while.
+        </li>
+        <li>Learn Math and Have Fun!
+          <br>Enjoy this new skill and the journey!
+        </li>
+        </uol>
+      </p>
+    </div>
+  </div>
 
 </body>
-<script src="Scripts/index.js"></script>
-<script src="Scripts/jquery-3.7.1.js"></script>
 
 </html>

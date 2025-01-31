@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en-US">
+
+<head>
+  <title>Criss-Cross Method Quiz</title>
+  <link href="styles.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Chivo:ital@0;1&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap"
+    rel="stylesheet">
+
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="sidenav">
+      <div class="sidenavtext">
+        <img src="Images/MMT Logo.png" id="MMT" />
+        <a href="index.html">Home</a>
+        <a href="multipyEleven.html">Multiplication by Eleven</a>
+        <a href="dayOfWeek.html">Day of the Week</a>
+        <a href="squareNumbers.html">Squaring</a>
+        <a href="checkDivisibility.html">Check Divisibility</a>
+        <a href="crossMethod.html">Criss-Cross Method</a>
+      </div>
+    </div>
+    <div class="content">
+      <h1> Criss-Cross Method Quiz </h1>
+      <h2>Calculate:</h2>
+      <div class="question" id="question">Question:</div>
+      <br>
+      <hr>
+      <h2>Type your answer:</h2>
+      <input id="answer" type="number" placeholder="Answer Here..." oninput="toggleSubmit()">
+      <button id="submit">Submit Your Answer!</button>
+      <div id="result"></div>
+      <div id="explanation-box">
+        <hr>
+        <h3 id="explain">Explanation:</h3>
+        <pre>
+          <div id="explanation"></div>
+        </pre>
+        <hr>
+      </div>
+      <button id="next">Next Question</button>
+      <button id="showFinalScore">Final Score</button>
+      <div class="back">
+        <a href="crossMethod.html">Back to Article</a>
+      </div>
+      <div class="back">
+        <a href="crossPractice.html">Daily Practice</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="Scripts/crossQuiz.js"></script>
+</body>
